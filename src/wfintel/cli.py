@@ -52,7 +52,8 @@ def main(argv: list[str] | None = None) -> int:
         for f in res["findings"]:
             print(f"{f['file']}:{f['line']}: {f['rule']}: {f['text']}")
         print(
-            f"{len(res['files'])} files scanned, {len(res['findings'])} findings: {'PASS' if res['passed'] else 'FAIL'}"
+            f"{len(res['files'])} files scanned, {len(res['findings'])} finding{'' if len(res['findings']) == 1 else 's'}: "
+            f"{'PASS' if res['passed'] else 'FAIL'}"
         )
         return 0 if res["passed"] else 1
     elif a.cmd == "report":

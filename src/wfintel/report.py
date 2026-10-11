@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -28,7 +29,10 @@ def pval(p: float) -> str:
 
 
 def table(head: list[str], rows: list[list[str]]) -> str:
-    align = ["---" if i == 0 else "---:" for i in range(len(head))]
+    def numeric(i: int) -> bool:
+        return all(re.match(r"^[\d−<–]", r[i]) for r in rows if r[i] != "–")
+
+    align = ["---:" if i and numeric(i) else "---" for i in range(len(head))]
     return "\n".join(
         ["| " + " | ".join(head) + " |", "| " + " | ".join(align) + " |"] + ["| " + " | ".join(r) + " |" for r in rows]
     )
@@ -52,7 +56,7 @@ def render(results: Path = RESULTS, out: Path | None = None) -> Path:
         "IBM HR Analytics Employee Attrition & Performance: a fictional dataset. Every figure is an association in "
         "one cross-section of that synthetic workforce.", "",
         "## Data checks", "",
-        table(["#", "Check", "Value", "Action"], [[str(c["id"]), c["check_name"], f"{c['value']:g} {c['unit']}", c["action"]]
+        table(["#", "Check", "Value", "Action"], [[str(c["id"]), c["check_name"], f"{num(c['value'], 0)} {c['unit']}", c["action"]]
                                                  for c in q["data_checks"]]), "",
         table(["Table", "Rows"], [[t["table_name"], f"{t['rows']:,}"] for t in q["model_tables"]]), "",
         "## Headline", "",
@@ -142,7 +146,7 @@ def render(results: Path = RESULTS, out: Path | None = None) -> Path:
         "## Causal-language audit",
         "",
         f"{'PASS' if aud['passed'] else 'FAIL'}: {len(aud['files'])} files and texts scanned against {len(aud['rules'])} rules, "
-        f"{len(aud['findings'])} findings (audit run with the pipeline; `wfintel audit` reruns it on the current files).",
+        f"{len(aud['findings'])} finding{'' if len(aud['findings']) == 1 else 's'} (audit run with the pipeline; `wfintel audit` reruns it on the current files).",
         "",
     ]
     out = out or DOCS / "generated" / "results.md"
