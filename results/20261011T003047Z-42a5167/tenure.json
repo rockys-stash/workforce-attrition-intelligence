@@ -1,0 +1,226 @@
+{
+ "tenure_curve": [
+  {
+   "years": 0,
+   "employees": 44,
+   "leavers": 16,
+   "rate": 0.363636
+  },
+  {
+   "years": 1,
+   "employees": 171,
+   "leavers": 59,
+   "rate": 0.345029
+  },
+  {
+   "years": 2,
+   "employees": 127,
+   "leavers": 27,
+   "rate": 0.212598
+  },
+  {
+   "years": 3,
+   "employees": 128,
+   "leavers": 20,
+   "rate": 0.15625
+  },
+  {
+   "years": 4,
+   "employees": 110,
+   "leavers": 19,
+   "rate": 0.172727
+  },
+  {
+   "years": 5,
+   "employees": 196,
+   "leavers": 21,
+   "rate": 0.107143
+  },
+  {
+   "years": 6,
+   "employees": 76,
+   "leavers": 9,
+   "rate": 0.118421
+  },
+  {
+   "years": 7,
+   "employees": 90,
+   "leavers": 11,
+   "rate": 0.122222
+  },
+  {
+   "years": 8,
+   "employees": 80,
+   "leavers": 9,
+   "rate": 0.1125
+  },
+  {
+   "years": 9,
+   "employees": 82,
+   "leavers": 8,
+   "rate": 0.097561
+  },
+  {
+   "years": 10,
+   "employees": 120,
+   "leavers": 18,
+   "rate": 0.15
+  },
+  {
+   "years": 11,
+   "employees": 32,
+   "leavers": 2,
+   "rate": 0.0625
+  },
+  {
+   "years": 12,
+   "employees": 14,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 13,
+   "employees": 24,
+   "leavers": 2,
+   "rate": 0.083333
+  },
+  {
+   "years": 14,
+   "employees": 18,
+   "leavers": 2,
+   "rate": 0.111111
+  },
+  {
+   "years": 15,
+   "employees": 20,
+   "leavers": 1,
+   "rate": 0.05
+  },
+  {
+   "years": 16,
+   "employees": 12,
+   "leavers": 1,
+   "rate": 0.083333
+  },
+  {
+   "years": 17,
+   "employees": 9,
+   "leavers": 1,
+   "rate": 0.111111
+  },
+  {
+   "years": 18,
+   "employees": 13,
+   "leavers": 1,
+   "rate": 0.076923
+  },
+  {
+   "years": 19,
+   "employees": 11,
+   "leavers": 1,
+   "rate": 0.090909
+  },
+  {
+   "years": 20,
+   "employees": 27,
+   "leavers": 1,
+   "rate": 0.037037
+  },
+  {
+   "years": 21,
+   "employees": 14,
+   "leavers": 1,
+   "rate": 0.071429
+  },
+  {
+   "years": 22,
+   "employees": 15,
+   "leavers": 1,
+   "rate": 0.066667
+  },
+  {
+   "years": 23,
+   "employees": 2,
+   "leavers": 1,
+   "rate": 0.5
+  },
+  {
+   "years": 24,
+   "employees": 6,
+   "leavers": 1,
+   "rate": 0.166667
+  },
+  {
+   "years": 25,
+   "employees": 4,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 26,
+   "employees": 4,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 27,
+   "employees": 2,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 29,
+   "employees": 2,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 30,
+   "employees": 1,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 31,
+   "employees": 3,
+   "leavers": 1,
+   "rate": 0.333333
+  },
+  {
+   "years": 32,
+   "employees": 3,
+   "leavers": 1,
+   "rate": 0.333333
+  },
+  {
+   "years": 33,
+   "employees": 5,
+   "leavers": 1,
+   "rate": 0.2
+  },
+  {
+   "years": 34,
+   "employees": 1,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 36,
+   "employees": 2,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 37,
+   "employees": 1,
+   "leavers": 0,
+   "rate": 0.0
+  },
+  {
+   "years": 40,
+   "employees": 1,
+   "leavers": 1,
+   "rate": 1.0
+  }
+ ]
+}

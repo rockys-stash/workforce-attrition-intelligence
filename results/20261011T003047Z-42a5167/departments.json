@@ -1,0 +1,136 @@
+{
+ "departments": [
+  {
+   "department": "Human Resources",
+   "job_role": "Human Resources",
+   "employees": 52,
+   "leavers": 12,
+   "rate": 0.230769,
+   "median_income": 3093.0,
+   "overtime_share": 0.25,
+   "mean_job_satisfaction": 2.557692,
+   "median_tenure": 5.0,
+   "mean_job_level": 1.480769
+  },
+  {
+   "department": "Human Resources",
+   "job_role": "Manager",
+   "employees": 11,
+   "leavers": 0,
+   "rate": 0.0,
+   "median_income": 18844.0,
+   "overtime_share": 0.363636,
+   "mean_job_satisfaction": 2.818182,
+   "median_tenure": 20.0,
+   "mean_job_level": 4.636364
+  },
+  {
+   "department": "Research & Development",
+   "job_role": "Research Scientist",
+   "employees": 292,
+   "leavers": 47,
+   "rate": 0.160959,
+   "median_income": 2887.5,
+   "overtime_share": 0.332192,
+   "mean_job_satisfaction": 2.773973,
+   "median_tenure": 4.5,
+   "mean_job_level": 1.202055
+  },
+  {
+   "department": "Research & Development",
+   "job_role": "Laboratory Technician",
+   "employees": 259,
+   "leavers": 62,
+   "rate": 0.239382,
+   "median_income": 2886.0,
+   "overtime_share": 0.239382,
+   "mean_job_satisfaction": 2.69112,
+   "median_tenure": 4.0,
+   "mean_job_level": 1.239382
+  },
+  {
+   "department": "Research & Development",
+   "job_role": "Manufacturing Director",
+   "employees": 145,
+   "leavers": 10,
+   "rate": 0.068966,
+   "median_income": 6447.0,
+   "overtime_share": 0.268966,
+   "mean_job_satisfaction": 2.682759,
+   "median_tenure": 7.0,
+   "mean_job_level": 2.448276
+  },
+  {
+   "department": "Research & Development",
+   "job_role": "Healthcare Representative",
+   "employees": 131,
+   "leavers": 9,
+   "rate": 0.068702,
+   "median_income": 6811.0,
+   "overtime_share": 0.282443,
+   "mean_job_satisfaction": 2.78626,
+   "median_tenure": 7.0,
+   "mean_job_level": 2.473282
+  },
+  {
+   "department": "Research & Development",
+   "job_role": "Research Director",
+   "employees": 80,
+   "leavers": 2,
+   "rate": 0.025,
+   "median_income": 16510.0,
+   "overtime_share": 0.2875,
+   "mean_job_satisfaction": 2.7,
+   "median_tenure": 9.0,
+   "mean_job_level": 3.975
+  },
+  {
+   "department": "Research & Development",
+   "job_role": "Manager",
+   "employees": 54,
+   "leavers": 3,
+   "rate": 0.055556,
+   "median_income": 17545.5,
+   "overtime_share": 0.240741,
+   "mean_job_satisfaction": 2.648148,
+   "median_tenure": 10.0,
+   "mean_job_level": 4.277778
+  },
+  {
+   "department": "Sales",
+   "job_role": "Sales Executive",
+   "employees": 326,
+   "leavers": 57,
+   "rate": 0.174847,
+   "median_income": 6231.0,
+   "overtime_share": 0.288344,
+   "mean_job_satisfaction": 2.754601,
+   "median_tenure": 7.0,
+   "mean_job_level": 2.328221
+  },
+  {
+   "department": "Sales",
+   "job_role": "Sales Representative",
+   "employees": 83,
+   "leavers": 33,
+   "rate": 0.39759,
+   "median_income": 2579.0,
+   "overtime_share": 0.289157,
+   "mean_job_satisfaction": 2.73494,
+   "median_tenure": 2.0,
+   "mean_job_level": 1.084337
+  },
+  {
+   "department": "Sales",
+   "job_role": "Manager",
+   "employees": 37,
+   "leavers": 2,
+   "rate": 0.054054,
+   "median_income": 17048.0,
+   "overtime_share": 0.27027,
+   "mean_job_satisfaction": 2.756757,
+   "median_tenure": 16.0,
+   "mean_job_level": 4.243243
+  }
+ ]
+}

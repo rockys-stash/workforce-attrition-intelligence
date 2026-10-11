@@ -1,0 +1,1358 @@
+{
+ "factors": {
+  "department": {
+   "name": "Department",
+   "levels": [
+    {
+     "level": "Research & Development",
+     "employees": 961,
+     "leavers": 133,
+     "rate": 0.138398,
+     "ci_low": 0.118001,
+     "ci_high": 0.161674,
+     "label": "Research & Development"
+    },
+    {
+     "level": "Sales",
+     "employees": 446,
+     "leavers": 92,
+     "rate": 0.206278,
+     "ci_low": 0.17131,
+     "ci_high": 0.246262,
+     "label": "Sales"
+    },
+    {
+     "level": "Human Resources",
+     "employees": 63,
+     "leavers": 12,
+     "rate": 0.190476,
+     "ci_low": 0.112462,
+     "ci_high": 0.304068,
+     "label": "Human Resources"
+    }
+   ]
+  },
+  "job_role": {
+   "name": "Job role",
+   "levels": [
+    {
+     "level": "Sales Executive",
+     "employees": 326,
+     "leavers": 57,
+     "rate": 0.174847,
+     "ci_low": 0.137468,
+     "ci_high": 0.219799,
+     "label": "Sales Executive"
+    },
+    {
+     "level": "Research Scientist",
+     "employees": 292,
+     "leavers": 47,
+     "rate": 0.160959,
+     "ci_low": 0.123254,
+     "ci_high": 0.207468,
+     "label": "Research Scientist"
+    },
+    {
+     "level": "Laboratory Technician",
+     "employees": 259,
+     "leavers": 62,
+     "rate": 0.239382,
+     "ci_low": 0.191465,
+     "ci_high": 0.294917,
+     "label": "Laboratory Technician"
+    },
+    {
+     "level": "Manufacturing Director",
+     "employees": 145,
+     "leavers": 10,
+     "rate": 0.068966,
+     "ci_low": 0.037889,
+     "ci_high": 0.122291,
+     "label": "Manufacturing Director"
+    },
+    {
+     "level": "Healthcare Representative",
+     "employees": 131,
+     "leavers": 9,
+     "rate": 0.068702,
+     "ci_low": 0.036563,
+     "ci_high": 0.125416,
+     "label": "Healthcare Representative"
+    },
+    {
+     "level": "Manager",
+     "employees": 102,
+     "leavers": 5,
+     "rate": 0.04902,
+     "ci_low": 0.021118,
+     "ci_high": 0.109658,
+     "label": "Manager"
+    },
+    {
+     "level": "Sales Representative",
+     "employees": 83,
+     "leavers": 33,
+     "rate": 0.39759,
+     "ci_low": 0.299089,
+     "ci_high": 0.505152,
+     "label": "Sales Representative"
+    },
+    {
+     "level": "Research Director",
+     "employees": 80,
+     "leavers": 2,
+     "rate": 0.025,
+     "ci_low": 0.006883,
+     "ci_high": 0.086644,
+     "label": "Research Director"
+    },
+    {
+     "level": "Human Resources",
+     "employees": 52,
+     "leavers": 12,
+     "rate": 0.230769,
+     "ci_low": 0.137243,
+     "ci_high": 0.361338,
+     "label": "Human Resources"
+    }
+   ]
+  },
+  "job_level": {
+   "name": "Job level",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 543,
+     "leavers": 143,
+     "rate": 0.263352,
+     "ci_low": 0.228061,
+     "ci_high": 0.301968,
+     "label": "Level 1"
+    },
+    {
+     "level": 2,
+     "employees": 534,
+     "leavers": 52,
+     "rate": 0.097378,
+     "ci_low": 0.075034,
+     "ci_high": 0.125474,
+     "label": "Level 2"
+    },
+    {
+     "level": 3,
+     "employees": 218,
+     "leavers": 32,
+     "rate": 0.146789,
+     "ci_low": 0.105936,
+     "ci_high": 0.199875,
+     "label": "Level 3"
+    },
+    {
+     "level": 4,
+     "employees": 106,
+     "leavers": 5,
+     "rate": 0.04717,
+     "ci_low": 0.020314,
+     "ci_high": 0.105699,
+     "label": "Level 4"
+    },
+    {
+     "level": 5,
+     "employees": 69,
+     "leavers": 5,
+     "rate": 0.072464,
+     "ci_low": 0.031348,
+     "ci_high": 0.158674,
+     "label": "Level 5"
+    }
+   ]
+  },
+  "income_band": {
+   "name": "Income band",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 294,
+     "leavers": 92,
+     "rate": 0.312925,
+     "ci_low": 0.262623,
+     "ci_high": 0.368053,
+     "label": "Lowest 20%"
+    },
+    {
+     "level": 2,
+     "employees": 294,
+     "leavers": 50,
+     "rate": 0.170068,
+     "ci_low": 0.131445,
+     "ci_high": 0.217202,
+     "label": "20–40%"
+    },
+    {
+     "level": 3,
+     "employees": 294,
+     "leavers": 31,
+     "rate": 0.105442,
+     "ci_low": 0.075283,
+     "ci_high": 0.14578,
+     "label": "40–60%"
+    },
+    {
+     "level": 4,
+     "employees": 294,
+     "leavers": 37,
+     "rate": 0.12585,
+     "ci_low": 0.0927,
+     "ci_high": 0.168652,
+     "label": "60–80%"
+    },
+    {
+     "level": 5,
+     "employees": 294,
+     "leavers": 27,
+     "rate": 0.091837,
+     "ci_low": 0.063883,
+     "ci_high": 0.130319,
+     "label": "Highest 20%"
+    }
+   ]
+  },
+  "pay_position": {
+   "name": "Pay vs job-level median",
+   "levels": [
+    {
+     "level": "Below level median",
+     "employees": 478,
+     "leavers": 96,
+     "rate": 0.200837,
+     "ci_low": 0.167371,
+     "ci_high": 0.239073,
+     "label": "Below level median"
+    },
+    {
+     "level": "At level median",
+     "employees": 585,
+     "leavers": 86,
+     "rate": 0.147009,
+     "ci_low": 0.120617,
+     "ci_high": 0.178006,
+     "label": "At level median"
+    },
+    {
+     "level": "Above level median",
+     "employees": 407,
+     "leavers": 55,
+     "rate": 0.135135,
+     "ci_low": 0.105314,
+     "ci_high": 0.17178,
+     "label": "Above level median"
+    }
+   ]
+  },
+  "tenure_band": {
+   "name": "Years at the company",
+   "levels": [
+    {
+     "level": "0–1 yrs",
+     "employees": 215,
+     "leavers": 75,
+     "rate": 0.348837,
+     "ci_low": 0.28829,
+     "ci_high": 0.414691,
+     "label": "0–1 yrs"
+    },
+    {
+     "level": "2–3 yrs",
+     "employees": 255,
+     "leavers": 47,
+     "rate": 0.184314,
+     "ci_low": 0.141531,
+     "ci_high": 0.236466,
+     "label": "2–3 yrs"
+    },
+    {
+     "level": "4–5 yrs",
+     "employees": 306,
+     "leavers": 40,
+     "rate": 0.130719,
+     "ci_low": 0.097485,
+     "ci_high": 0.17311,
+     "label": "4–5 yrs"
+    },
+    {
+     "level": "6–10 yrs",
+     "employees": 448,
+     "leavers": 55,
+     "rate": 0.122768,
+     "ci_low": 0.095547,
+     "ci_high": 0.156403,
+     "label": "6–10 yrs"
+    },
+    {
+     "level": "11–20 yrs",
+     "employees": 180,
+     "leavers": 12,
+     "rate": 0.066667,
+     "ci_low": 0.038544,
+     "ci_high": 0.112899,
+     "label": "11–20 yrs"
+    },
+    {
+     "level": "21+ yrs",
+     "employees": 66,
+     "leavers": 8,
+     "rate": 0.121212,
+     "ci_low": 0.062718,
+     "ci_high": 0.221374,
+     "label": "21+ yrs"
+    }
+   ]
+  },
+  "age_band": {
+   "name": "Age",
+   "levels": [
+    {
+     "level": "18–25",
+     "employees": 123,
+     "leavers": 44,
+     "rate": 0.357724,
+     "ci_low": 0.278505,
+     "ci_high": 0.44556,
+     "label": "18–25"
+    },
+    {
+     "level": "26–35",
+     "employees": 606,
+     "leavers": 116,
+     "rate": 0.191419,
+     "ci_low": 0.162078,
+     "ci_high": 0.224648,
+     "label": "26–35"
+    },
+    {
+     "level": "36–45",
+     "employees": 468,
+     "leavers": 43,
+     "rate": 0.09188,
+     "ci_low": 0.068929,
+     "ci_high": 0.121477,
+     "label": "36–45"
+    },
+    {
+     "level": "46+",
+     "employees": 273,
+     "leavers": 34,
+     "rate": 0.124542,
+     "ci_low": 0.090508,
+     "ci_high": 0.168996,
+     "label": "46+"
+    }
+   ]
+  },
+  "overtime": {
+   "name": "Overtime",
+   "levels": [
+    {
+     "level": 0,
+     "employees": 1054,
+     "leavers": 110,
+     "rate": 0.104364,
+     "ci_low": 0.087321,
+     "ci_high": 0.124281,
+     "label": "No overtime"
+    },
+    {
+     "level": 1,
+     "employees": 416,
+     "leavers": 127,
+     "rate": 0.305288,
+     "ci_low": 0.262982,
+     "ci_high": 0.351158,
+     "label": "Overtime"
+    }
+   ]
+  },
+  "business_travel": {
+   "name": "Business travel",
+   "levels": [
+    {
+     "level": "None",
+     "employees": 150,
+     "leavers": 12,
+     "rate": 0.08,
+     "ci_low": 0.046354,
+     "ci_high": 0.134621,
+     "label": "None"
+    },
+    {
+     "level": "Rarely",
+     "employees": 1043,
+     "leavers": 156,
+     "rate": 0.149569,
+     "ci_low": 0.129212,
+     "ci_high": 0.172497,
+     "label": "Rarely"
+    },
+    {
+     "level": "Frequently",
+     "employees": 277,
+     "leavers": 69,
+     "rate": 0.249097,
+     "ci_low": 0.201831,
+     "ci_high": 0.303227,
+     "label": "Frequently"
+    }
+   ]
+  },
+  "performance_rating": {
+   "name": "Performance rating",
+   "levels": [
+    {
+     "level": 3,
+     "employees": 1244,
+     "leavers": 200,
+     "rate": 0.160772,
+     "ci_low": 0.141409,
+     "ci_high": 0.182223,
+     "label": "Excellent"
+    },
+    {
+     "level": 4,
+     "employees": 226,
+     "leavers": 37,
+     "rate": 0.163717,
+     "ci_low": 0.121172,
+     "ci_high": 0.217503,
+     "label": "Outstanding"
+    }
+   ]
+  },
+  "promotion_band": {
+   "name": "Years since last promotion",
+   "levels": [
+    {
+     "level": "0 yrs",
+     "employees": 581,
+     "leavers": 110,
+     "rate": 0.189329,
+     "ci_low": 0.159553,
+     "ci_high": 0.223186,
+     "label": "0 yrs"
+    },
+    {
+     "level": "1–2 yrs",
+     "employees": 516,
+     "leavers": 76,
+     "rate": 0.147287,
+     "ci_low": 0.119317,
+     "ci_high": 0.180469,
+     "label": "1–2 yrs"
+    },
+    {
+     "level": "3–5 yrs",
+     "employees": 158,
+     "leavers": 16,
+     "rate": 0.101266,
+     "ci_low": 0.063298,
+     "ci_high": 0.158162,
+     "label": "3–5 yrs"
+    },
+    {
+     "level": "6+ yrs",
+     "employees": 215,
+     "leavers": 35,
+     "rate": 0.162791,
+     "ci_low": 0.119441,
+     "ci_high": 0.217979,
+     "label": "6+ yrs"
+    }
+   ]
+  },
+  "job_satisfaction": {
+   "name": "Job satisfaction",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 289,
+     "leavers": 66,
+     "rate": 0.228374,
+     "ci_low": 0.183726,
+     "ci_high": 0.280148,
+     "label": "Low"
+    },
+    {
+     "level": 2,
+     "employees": 280,
+     "leavers": 46,
+     "rate": 0.164286,
+     "ci_low": 0.125484,
+     "ci_high": 0.212174,
+     "label": "Medium"
+    },
+    {
+     "level": 3,
+     "employees": 442,
+     "leavers": 73,
+     "rate": 0.165158,
+     "ci_low": 0.133455,
+     "ci_high": 0.202632,
+     "label": "High"
+    },
+    {
+     "level": 4,
+     "employees": 459,
+     "leavers": 52,
+     "rate": 0.11329,
+     "ci_low": 0.087447,
+     "ci_high": 0.145552,
+     "label": "Very high"
+    }
+   ]
+  },
+  "environment_satisfaction": {
+   "name": "Environment satisfaction",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 284,
+     "leavers": 72,
+     "rate": 0.253521,
+     "ci_low": 0.206447,
+     "ci_high": 0.307174,
+     "label": "Low"
+    },
+    {
+     "level": 2,
+     "employees": 287,
+     "leavers": 43,
+     "rate": 0.149826,
+     "ci_low": 0.113174,
+     "ci_high": 0.195728,
+     "label": "Medium"
+    },
+    {
+     "level": 3,
+     "employees": 453,
+     "leavers": 62,
+     "rate": 0.136865,
+     "ci_low": 0.108254,
+     "ci_high": 0.171584,
+     "label": "High"
+    },
+    {
+     "level": 4,
+     "employees": 446,
+     "leavers": 60,
+     "rate": 0.134529,
+     "ci_low": 0.105964,
+     "ci_high": 0.169336,
+     "label": "Very high"
+    }
+   ]
+  },
+  "relationship_satisfaction": {
+   "name": "Relationship satisfaction",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 276,
+     "leavers": 57,
+     "rate": 0.206522,
+     "ci_low": 0.162951,
+     "ci_high": 0.25815,
+     "label": "Low"
+    },
+    {
+     "level": 2,
+     "employees": 303,
+     "leavers": 45,
+     "rate": 0.148515,
+     "ci_low": 0.112883,
+     "ci_high": 0.192947,
+     "label": "Medium"
+    },
+    {
+     "level": 3,
+     "employees": 459,
+     "leavers": 71,
+     "rate": 0.154684,
+     "ci_low": 0.124483,
+     "ci_high": 0.190618,
+     "label": "High"
+    },
+    {
+     "level": 4,
+     "employees": 432,
+     "leavers": 64,
+     "rate": 0.148148,
+     "ci_low": 0.117754,
+     "ci_high": 0.184745,
+     "label": "Very high"
+    }
+   ]
+  },
+  "work_life_balance": {
+   "name": "Work-life balance",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 80,
+     "leavers": 25,
+     "rate": 0.3125,
+     "ci_low": 0.221504,
+     "ci_high": 0.420678,
+     "label": "Bad"
+    },
+    {
+     "level": 2,
+     "employees": 344,
+     "leavers": 58,
+     "rate": 0.168605,
+     "ci_low": 0.132749,
+     "ci_high": 0.21178,
+     "label": "Good"
+    },
+    {
+     "level": 3,
+     "employees": 893,
+     "leavers": 127,
+     "rate": 0.142217,
+     "ci_low": 0.12084,
+     "ci_high": 0.16666,
+     "label": "Better"
+    },
+    {
+     "level": 4,
+     "employees": 153,
+     "leavers": 27,
+     "rate": 0.176471,
+     "ci_low": 0.124209,
+     "ci_high": 0.24458,
+     "label": "Best"
+    }
+   ]
+  },
+  "job_involvement": {
+   "name": "Job involvement",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 83,
+     "leavers": 28,
+     "rate": 0.337349,
+     "ci_low": 0.244843,
+     "ci_high": 0.444246,
+     "label": "Low"
+    },
+    {
+     "level": 2,
+     "employees": 375,
+     "leavers": 71,
+     "rate": 0.189333,
+     "ci_low": 0.152907,
+     "ci_high": 0.23206,
+     "label": "Medium"
+    },
+    {
+     "level": 3,
+     "employees": 868,
+     "leavers": 125,
+     "rate": 0.144009,
+     "ci_low": 0.12222,
+     "ci_high": 0.168936,
+     "label": "High"
+    },
+    {
+     "level": 4,
+     "employees": 144,
+     "leavers": 13,
+     "rate": 0.090278,
+     "ci_low": 0.053518,
+     "ci_high": 0.14833,
+     "label": "Very high"
+    }
+   ]
+  },
+  "stock_option_level": {
+   "name": "Stock option level",
+   "levels": [
+    {
+     "level": 0,
+     "employees": 631,
+     "leavers": 154,
+     "rate": 0.244057,
+     "ci_low": 0.212158,
+     "ci_high": 0.279054,
+     "label": "Level 0"
+    },
+    {
+     "level": 1,
+     "employees": 596,
+     "leavers": 56,
+     "rate": 0.09396,
+     "ci_low": 0.073066,
+     "ci_high": 0.120054,
+     "label": "Level 1"
+    },
+    {
+     "level": 2,
+     "employees": 158,
+     "leavers": 12,
+     "rate": 0.075949,
+     "ci_low": 0.043977,
+     "ci_high": 0.128052,
+     "label": "Level 2"
+    },
+    {
+     "level": 3,
+     "employees": 85,
+     "leavers": 15,
+     "rate": 0.176471,
+     "ci_low": 0.109964,
+     "ci_high": 0.270956,
+     "label": "Level 3"
+    }
+   ]
+  },
+  "education": {
+   "name": "Education",
+   "levels": [
+    {
+     "level": 1,
+     "employees": 170,
+     "leavers": 31,
+     "rate": 0.182353,
+     "ci_low": 0.131545,
+     "ci_high": 0.2472,
+     "label": "Below college"
+    },
+    {
+     "level": 2,
+     "employees": 282,
+     "leavers": 44,
+     "rate": 0.156028,
+     "ci_low": 0.11833,
+     "ci_high": 0.202972,
+     "label": "College"
+    },
+    {
+     "level": 3,
+     "employees": 572,
+     "leavers": 99,
+     "rate": 0.173077,
+     "ci_low": 0.144282,
+     "ci_high": 0.206234,
+     "label": "Bachelor"
+    },
+    {
+     "level": 4,
+     "employees": 398,
+     "leavers": 58,
+     "rate": 0.145729,
+     "ci_low": 0.114452,
+     "ci_high": 0.183779,
+     "label": "Master"
+    },
+    {
+     "level": 5,
+     "employees": 48,
+     "leavers": 5,
+     "rate": 0.104167,
+     "ci_low": 0.045322,
+     "ci_high": 0.221674,
+     "label": "Doctor"
+    }
+   ]
+  },
+  "education_field": {
+   "name": "Education field",
+   "levels": [
+    {
+     "level": "Life Sciences",
+     "employees": 606,
+     "leavers": 89,
+     "rate": 0.146865,
+     "ci_low": 0.120908,
+     "ci_high": 0.177271,
+     "label": "Life Sciences"
+    },
+    {
+     "level": "Medical",
+     "employees": 464,
+     "leavers": 63,
+     "rate": 0.135776,
+     "ci_low": 0.107583,
+     "ci_high": 0.16995,
+     "label": "Medical"
+    },
+    {
+     "level": "Marketing",
+     "employees": 159,
+     "leavers": 35,
+     "rate": 0.220126,
+     "ci_low": 0.162749,
+     "ci_high": 0.290707,
+     "label": "Marketing"
+    },
+    {
+     "level": "Technical Degree",
+     "employees": 132,
+     "leavers": 32,
+     "rate": 0.242424,
+     "ci_low": 0.177275,
+     "ci_high": 0.322142,
+     "label": "Technical Degree"
+    },
+    {
+     "level": "Other",
+     "employees": 82,
+     "leavers": 11,
+     "rate": 0.134146,
+     "ci_low": 0.076587,
+     "ci_high": 0.22445,
+     "label": "Other"
+    },
+    {
+     "level": "Human Resources",
+     "employees": 27,
+     "leavers": 7,
+     "rate": 0.259259,
+     "ci_low": 0.131704,
+     "ci_high": 0.446786,
+     "label": "Human Resources"
+    }
+   ]
+  },
+  "gender": {
+   "name": "Gender",
+   "levels": [
+    {
+     "level": "Male",
+     "employees": 882,
+     "leavers": 150,
+     "rate": 0.170068,
+     "ci_low": 0.146717,
+     "ci_high": 0.19628,
+     "label": "Male"
+    },
+    {
+     "level": "Female",
+     "employees": 588,
+     "leavers": 87,
+     "rate": 0.147959,
+     "ci_low": 0.121548,
+     "ci_high": 0.178941,
+     "label": "Female"
+    }
+   ]
+  },
+  "marital_status": {
+   "name": "Marital status",
+   "levels": [
+    {
+     "level": "Married",
+     "employees": 673,
+     "leavers": 84,
+     "rate": 0.124814,
+     "ci_low": 0.101953,
+     "ci_high": 0.151934,
+     "label": "Married"
+    },
+    {
+     "level": "Single",
+     "employees": 470,
+     "leavers": 120,
+     "rate": 0.255319,
+     "ci_low": 0.217992,
+     "ci_high": 0.296614,
+     "label": "Single"
+    },
+    {
+     "level": "Divorced",
+     "employees": 327,
+     "leavers": 33,
+     "rate": 0.100917,
+     "ci_low": 0.072764,
+     "ci_high": 0.138338,
+     "label": "Divorced"
+    }
+   ]
+  }
+ },
+ "tests": [
+  {
+   "factor": "overtime",
+   "test": "chi-square",
+   "statistic": 89.043879,
+   "df": 1,
+   "p": 0.0,
+   "effect": 0.246118,
+   "effect_name": "Cramér's V",
+   "min_expected": 67.069388,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Overtime"
+  },
+  {
+   "factor": "job_role",
+   "test": "chi-square",
+   "statistic": 86.190254,
+   "df": 8,
+   "p": 0.0,
+   "effect": 0.242142,
+   "effect_name": "Cramér's V",
+   "min_expected": 8.383673,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Job role"
+  },
+  {
+   "factor": "job_level",
+   "test": "chi-square",
+   "statistic": 72.529013,
+   "df": 4,
+   "p": 0.0,
+   "effect": 0.222125,
+   "effect_name": "Cramér's V",
+   "min_expected": 11.12449,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Job level"
+  },
+  {
+   "factor": "total_working_years",
+   "test": "Mann–Whitney U",
+   "statistic": 100567.0,
+   "df": null,
+   "p": 0.0,
+   "effect": -0.311706,
+   "effect_name": "rank-biserial r",
+   "median_left": 7.0,
+   "median_stayed": 10.0,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Total working years"
+  },
+  {
+   "factor": "monthly_income",
+   "test": "Mann–Whitney U",
+   "statistic": 100620.5,
+   "df": null,
+   "p": 0.0,
+   "effect": -0.31134,
+   "effect_name": "rank-biserial r",
+   "median_left": 3202.0,
+   "median_stayed": 5204.0,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Monthly income"
+  },
+  {
+   "factor": "years_at_company",
+   "test": "Mann–Whitney U",
+   "statistic": 102582.0,
+   "df": null,
+   "p": 0.0,
+   "effect": -0.297915,
+   "effect_name": "rank-biserial r",
+   "median_left": 3.0,
+   "median_stayed": 6.0,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Years at the company"
+  },
+  {
+   "factor": "stock_option_level",
+   "test": "chi-square",
+   "statistic": 60.598301,
+   "df": 3,
+   "p": 0.0,
+   "effect": 0.203035,
+   "effect_name": "Cramér's V",
+   "min_expected": 13.704082,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Stock option level"
+  },
+  {
+   "factor": "years_in_current_role",
+   "test": "Mann–Whitney U",
+   "statistic": 105214.0,
+   "df": null,
+   "p": 0.0,
+   "effect": -0.279901,
+   "effect_name": "rank-biserial r",
+   "median_left": 2.0,
+   "median_stayed": 3.0,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Years in current role"
+  },
+  {
+   "factor": "years_with_curr_manager",
+   "test": "Mann–Whitney U",
+   "statistic": 106361.5,
+   "df": null,
+   "p": 0.0,
+   "effect": -0.272048,
+   "effect_name": "rank-biserial r",
+   "median_left": 2.0,
+   "median_stayed": 3.0,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Years with current manager"
+  },
+  {
+   "factor": "age",
+   "test": "Mann–Whitney U",
+   "statistic": 106859.0,
+   "df": null,
+   "p": 0.0,
+   "effect": -0.268643,
+   "effect_name": "rank-biserial r",
+   "median_left": 32.0,
+   "median_stayed": 36.0,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Age"
+  },
+  {
+   "factor": "marital_status",
+   "test": "chi-square",
+   "statistic": 46.163677,
+   "df": 2,
+   "p": 0.0,
+   "effect": 0.177211,
+   "effect_name": "Cramér's V",
+   "min_expected": 52.720408,
+   "n": 1470,
+   "p_holm": 0.0,
+   "significant": true,
+   "name": "Marital status"
+  },
+  {
+   "factor": "job_involvement",
+   "test": "chi-square",
+   "statistic": 28.492021,
+   "df": 3,
+   "p": 3e-06,
+   "effect": 0.13922,
+   "effect_name": "Cramér's V",
+   "min_expected": 13.381633,
+   "n": 1470,
+   "p_holm": 4.6e-05,
+   "significant": true,
+   "name": "Job involvement"
+  },
+  {
+   "factor": "business_travel",
+   "test": "chi-square",
+   "statistic": 24.182414,
+   "df": 2,
+   "p": 6e-06,
+   "effect": 0.12826,
+   "effect_name": "Cramér's V",
+   "min_expected": 24.183673,
+   "n": 1470,
+   "p_holm": 8.4e-05,
+   "significant": true,
+   "name": "Business travel"
+  },
+  {
+   "factor": "environment_satisfaction",
+   "test": "chi-square",
+   "statistic": 22.503881,
+   "df": 3,
+   "p": 5.1e-05,
+   "effect": 0.123729,
+   "effect_name": "Cramér's V",
+   "min_expected": 45.787755,
+   "n": 1470,
+   "p_holm": 0.000717,
+   "significant": true,
+   "name": "Environment satisfaction"
+  },
+  {
+   "factor": "job_satisfaction",
+   "test": "chi-square",
+   "statistic": 17.505077,
+   "df": 3,
+   "p": 0.000556,
+   "effect": 0.109125,
+   "effect_name": "Cramér's V",
+   "min_expected": 45.142857,
+   "n": 1470,
+   "p_holm": 0.007232,
+   "significant": true,
+   "name": "Job satisfaction"
+  },
+  {
+   "factor": "work_life_balance",
+   "test": "chi-square",
+   "statistic": 16.325097,
+   "df": 3,
+   "p": 0.000973,
+   "effect": 0.105383,
+   "effect_name": "Cramér's V",
+   "min_expected": 12.897959,
+   "n": 1470,
+   "p_holm": 0.011671,
+   "significant": true,
+   "name": "Work-life balance"
+  },
+  {
+   "factor": "distance_from_home",
+   "test": "Mann–Whitney U",
+   "statistic": 164225.5,
+   "df": null,
+   "p": 0.002387,
+   "effect": 0.123982,
+   "effect_name": "rank-biserial r",
+   "median_left": 9.0,
+   "median_stayed": 7.0,
+   "n": 1470,
+   "p_holm": 0.026258,
+   "significant": true,
+   "name": "Distance from home"
+  },
+  {
+   "factor": "department",
+   "test": "chi-square",
+   "statistic": 10.796007,
+   "df": 2,
+   "p": 0.004526,
+   "effect": 0.085698,
+   "effect_name": "Cramér's V",
+   "min_expected": 10.157143,
+   "n": 1470,
+   "p_holm": 0.045256,
+   "significant": true,
+   "name": "Department"
+  },
+  {
+   "factor": "education_field",
+   "test": "chi-square",
+   "statistic": 16.024674,
+   "df": 5,
+   "p": 0.006774,
+   "effect": 0.104409,
+   "effect_name": "Cramér's V",
+   "min_expected": 4.353061,
+   "n": 1470,
+   "p_holm": 0.060966,
+   "significant": false,
+   "name": "Education field"
+  },
+  {
+   "factor": "years_since_last_promotion",
+   "test": "Mann–Whitney U",
+   "statistic": 134374.0,
+   "df": null,
+   "p": 0.041179,
+   "effect": -0.080326,
+   "effect_name": "rank-biserial r",
+   "median_left": 1.0,
+   "median_stayed": 1.0,
+   "n": 1470,
+   "p_holm": 0.329433,
+   "significant": false,
+   "name": "Years since last promotion"
+  },
+  {
+   "factor": "training_times_last_year",
+   "test": "Mann–Whitney U",
+   "statistic": 134785.5,
+   "df": null,
+   "p": 0.047296,
+   "effect": -0.07751,
+   "effect_name": "rank-biserial r",
+   "median_left": 2.0,
+   "median_stayed": 3.0,
+   "n": 1470,
+   "p_holm": 0.33107,
+   "significant": false,
+   "name": "Trainings last year"
+  },
+  {
+   "factor": "relationship_satisfaction",
+   "test": "chi-square",
+   "statistic": 5.241068,
+   "df": 3,
+   "p": 0.154972,
+   "effect": 0.059711,
+   "effect_name": "Cramér's V",
+   "min_expected": 44.497959,
+   "n": 1470,
+   "p_holm": 0.929835,
+   "significant": false,
+   "name": "Relationship satisfaction"
+  },
+  {
+   "factor": "num_companies_worked",
+   "test": "Mann–Whitney U",
+   "statistic": 152929.5,
+   "df": null,
+   "p": 0.242365,
+   "effect": 0.04667,
+   "effect_name": "rank-biserial r",
+   "median_left": 1.0,
+   "median_stayed": 2.0,
+   "n": 1470,
+   "p_holm": 1.0,
+   "significant": false,
+   "name": "Previous employers"
+  },
+  {
+   "factor": "gender",
+   "test": "chi-square",
+   "statistic": 1.275216,
+   "df": 1,
+   "p": 0.25879,
+   "effect": 0.029453,
+   "effect_name": "Cramér's V",
+   "min_expected": 94.8,
+   "n": 1470,
+   "p_holm": 1.0,
+   "significant": false,
+   "name": "Gender"
+  },
+  {
+   "factor": "percent_salary_hike",
+   "test": "Mann–Whitney U",
+   "statistic": 140726.5,
+   "df": null,
+   "p": 0.365515,
+   "effect": -0.036849,
+   "effect_name": "rank-biserial r",
+   "median_left": 14.0,
+   "median_stayed": 14.0,
+   "n": 1470,
+   "p_holm": 1.0,
+   "significant": false,
+   "name": "Last salary rise (%)"
+  },
+  {
+   "factor": "education",
+   "test": "chi-square",
+   "statistic": 3.073961,
+   "df": 4,
+   "p": 0.545525,
+   "effect": 0.045729,
+   "effect_name": "Cramér's V",
+   "min_expected": 7.738776,
+   "n": 1470,
+   "p_holm": 1.0,
+   "significant": false,
+   "name": "Education"
+  },
+  {
+   "factor": "performance_rating",
+   "test": "chi-square",
+   "statistic": 0.012267,
+   "df": 1,
+   "p": 0.91181,
+   "effect": 0.002889,
+   "effect_name": "Cramér's V",
+   "min_expected": 36.436735,
+   "n": 1470,
+   "p_holm": 1.0,
+   "significant": false,
+   "name": "Performance rating"
+  }
+ ],
+ "stratified": [
+  {
+   "exposure": "overtime",
+   "stratum": "job_level",
+   "crude": {
+    "odds_ratio": 3.771249,
+    "ci": [
+     2.82955,
+     5.026353
+    ]
+   },
+   "mantel_haenszel": {
+    "odds_ratio": 4.053707,
+    "ci": [
+     3.011946,
+     5.45579
+    ],
+    "p": 0.0
+   },
+   "homogeneity_p": 0.08379,
+   "strata": [
+    {
+     "stratum": "1",
+     "employees": 543,
+     "exposed": 156,
+     "rate_exposed": 0.525641,
+     "rate_unexposed": 0.157623,
+     "odds_ratio": 5.92202,
+     "ci": [
+      3.904447,
+      8.982148
+     ]
+    },
+    {
+     "stratum": "2",
+     "employees": 534,
+     "exposed": 146,
+     "rate_exposed": 0.178082,
+     "rate_unexposed": 0.06701,
+     "odds_ratio": 3.016667,
+     "ci": [
+      1.686508,
+      5.395928
+     ]
+    },
+    {
+     "stratum": "3",
+     "employees": 218,
+     "exposed": 63,
+     "rate_exposed": 0.206349,
+     "rate_unexposed": 0.122581,
+     "odds_ratio": 1.861053,
+     "ci": [
+      0.856206,
+      4.045192
+     ]
+    },
+    {
+     "stratum": "4",
+     "employees": 106,
+     "exposed": 33,
+     "rate_exposed": 0.090909,
+     "rate_unexposed": 0.027397,
+     "odds_ratio": 3.55,
+     "ci": [
+      0.564125,
+      22.339919
+     ]
+    },
+    {
+     "stratum": "5",
+     "employees": 69,
+     "exposed": 18,
+     "rate_exposed": 0.166667,
+     "rate_unexposed": 0.039216,
+     "odds_ratio": 4.9,
+     "ci": [
+      0.747405,
+      32.124473
+     ]
+    }
+   ]
+  }
+ ]
+}

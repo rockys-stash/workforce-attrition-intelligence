@@ -1,0 +1,106 @@
+{
+ "data_checks": [
+  {
+   "id": 1,
+   "check_name": "Rows with a missing value in any column",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "none found; nothing to impute"
+  },
+  {
+   "id": 2,
+   "check_name": "Duplicate employee numbers",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "none found"
+  },
+  {
+   "id": 3,
+   "check_name": "Records identical apart from the employee number",
+   "value": 0.0,
+   "unit": "groups",
+   "action": "none found"
+  },
+  {
+   "id": 4,
+   "check_name": "Columns with one value for every employee (employee count, over 18, standard hours)",
+   "value": 3.0,
+   "unit": "columns",
+   "action": "dropped: they carry no information"
+  },
+  {
+   "id": 5,
+   "check_name": "Years in current role greater than years at the company",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "kept, flagged"
+  },
+  {
+   "id": 6,
+   "check_name": "Years since last promotion greater than years at the company",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "kept, flagged"
+  },
+  {
+   "id": 7,
+   "check_name": "Years with current manager greater than years at the company",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "kept, flagged"
+  },
+  {
+   "id": 8,
+   "check_name": "Years at the company greater than total working years",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "kept, flagged"
+  },
+  {
+   "id": 9,
+   "check_name": "Working years imply starting work before age 14",
+   "value": 0.0,
+   "unit": "rows",
+   "action": "kept, flagged"
+  },
+  {
+   "id": 10,
+   "check_name": "Correlation of monthly income with the monthly rate (×100)",
+   "value": 3.0,
+   "unit": "r×100",
+   "action": "daily, hourly and monthly rates are unrelated to income: excluded from compensation analysis"
+  },
+  {
+   "id": 11,
+   "check_name": "Correlation of monthly income with the hourly rate (×100)",
+   "value": -2.0,
+   "unit": "r×100",
+   "action": "see 10"
+  },
+  {
+   "id": 12,
+   "check_name": "Correlation of monthly income with the daily rate (×100)",
+   "value": 1.0,
+   "unit": "r×100",
+   "action": "see 10"
+  }
+ ],
+ "model_tables": [
+  {
+   "table_name": "fact_employee",
+   "rows": 1470
+  },
+  {
+   "table_name": "dim_department",
+   "rows": 3
+  },
+  {
+   "table_name": "dim_job_role",
+   "rows": 11
+  },
+  {
+   "table_name": "dim_job_level",
+   "rows": 5
+  }
+ ]
+}

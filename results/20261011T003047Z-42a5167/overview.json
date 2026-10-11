@@ -1,0 +1,30 @@
+{
+ "kpis": {
+  "employees": 1470,
+  "leavers": 237,
+  "rate": 0.161224,
+  "median_income": 4919.0,
+  "overtime_share": 0.282993,
+  "median_tenure": 5.0,
+  "median_age": 36.0,
+  "inconsistent_rows": 0
+ },
+ "model_tables": [
+  {
+   "table_name": "fact_employee",
+   "rows": 1470
+  },
+  {
+   "table_name": "dim_department",
+   "rows": 3
+  },
+  {
+   "table_name": "dim_job_role",
+   "rows": 11
+  },
+  {
+   "table_name": "dim_job_level",
+   "rows": 5
+  }
+ ]
+}

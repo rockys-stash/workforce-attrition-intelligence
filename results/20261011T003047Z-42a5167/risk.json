@@ -1,0 +1,1223 @@
+{
+ "model": {
+  "split": {
+   "train": 1102,
+   "test": 368,
+   "train_leavers": 178,
+   "test_leavers": 59,
+   "seed": 0
+  },
+  "c_grid": [
+   {
+    "c": 0.01,
+    "log_loss": 0.362335,
+    "auroc": 0.80818
+   },
+   {
+    "c": 0.03,
+    "log_loss": 0.342135,
+    "auroc": 0.816954
+   },
+   {
+    "c": 0.1,
+    "log_loss": 0.331833,
+    "auroc": 0.822134
+   },
+   {
+    "c": 0.3,
+    "log_loss": 0.330879,
+    "auroc": 0.822316
+   },
+   {
+    "c": 1.0,
+    "log_loss": 0.333848,
+    "auroc": 0.820808
+   },
+   {
+    "c": 3.0,
+    "log_loss": 0.336958,
+    "auroc": 0.820079
+   },
+   {
+    "c": 10.0,
+    "log_loss": 0.339433,
+    "auroc": 0.819246
+   }
+  ],
+  "c": 0.3,
+  "test": {
+   "prevalence": {
+    "brier": 0.134623,
+    "log_loss": 0.440216,
+    "auroc": 0.5,
+    "average_precision": 0.160326,
+    "calibration_intercept": null,
+    "calibration_slope": null
+   },
+   "overtime_only": {
+    "brier": 0.125684,
+    "log_loss": 0.410039,
+    "auroc": 0.657918,
+    "average_precision": 0.243526,
+    "calibration_intercept": 0.002252,
+    "calibration_slope": 1.102426
+   },
+   "logistic": {
+    "brier": 0.091866,
+    "log_loss": 0.323026,
+    "auroc": 0.839065,
+    "average_precision": 0.630919,
+    "calibration_intercept": 0.053126,
+    "calibration_slope": 0.967056
+   },
+   "boosting": {
+    "brier": 0.099727,
+    "log_loss": 0.343156,
+    "auroc": 0.796939,
+    "average_precision": 0.574348,
+    "calibration_intercept": 0.192589,
+    "calibration_slope": 0.94113
+   }
+  },
+  "bootstrap": {
+   "models": {
+    "prevalence": {
+     "auroc": [
+      0.5,
+      0.5
+     ],
+     "average_precision": [
+      0.125,
+      0.19837
+     ],
+     "brier": [
+      0.110709,
+      0.160377
+     ]
+    },
+    "overtime_only": {
+     "auroc": [
+      0.587243,
+      0.728577
+     ],
+     "average_precision": [
+      0.175721,
+      0.320814
+     ],
+     "brier": [
+      0.103266,
+      0.149963
+     ]
+    },
+    "logistic": {
+     "auroc": [
+      0.769918,
+      0.901879
+     ],
+     "average_precision": [
+      0.509901,
+      0.746938
+     ],
+     "brier": [
+      0.07107,
+      0.112933
+     ]
+    },
+    "boosting": {
+     "auroc": [
+      0.721323,
+      0.864195
+     ],
+     "average_precision": [
+      0.443966,
+      0.693691
+     ],
+     "brier": [
+      0.07767,
+      0.123395
+     ]
+    }
+   },
+   "auroc_diff_logistic_minus": {
+    "prevalence": {
+     "diff": 0.339276,
+     "ci": [
+      0.269918,
+      0.401879
+     ]
+    },
+    "overtime_only": {
+     "diff": 0.182041,
+     "ci": [
+      0.11801,
+      0.24988
+     ]
+    },
+    "boosting": {
+     "diff": 0.042983,
+     "ci": [
+      0.002491,
+      0.086422
+     ]
+    }
+   }
+  },
+  "standardised_coefficients": [
+   {
+    "term": "business_travel_None",
+    "coef": -0.972698
+   },
+   {
+    "term": "job_role_Sales Representative",
+    "coef": 0.886075
+   },
+   {
+    "term": "overtime",
+    "coef": 0.807626
+   },
+   {
+    "term": "years_since_last_promotion",
+    "coef": 0.59083
+   },
+   {
+    "term": "business_travel_Rarely",
+    "coef": -0.580556
+   },
+   {
+    "term": "stock_option_level",
+    "coef": -0.473833
+   },
+   {
+    "term": "num_companies_worked",
+    "coef": 0.456368
+   },
+   {
+    "term": "education_field_Other",
+    "coef": -0.448408
+   },
+   {
+    "term": "years_with_curr_manager",
+    "coef": -0.444746
+   },
+   {
+    "term": "job_role_Human Resources",
+    "coef": 0.436888
+   },
+   {
+    "term": "education_field_Technical Degree",
+    "coef": 0.43611
+   },
+   {
+    "term": "total_working_years",
+    "coef": -0.412623
+   },
+   {
+    "term": "job_role_Laboratory Technician",
+    "coef": 0.410281
+   },
+   {
+    "term": "environment_satisfaction",
+    "coef": -0.404707
+   },
+   {
+    "term": "job_satisfaction",
+    "coef": -0.40427
+   },
+   {
+    "term": "years_in_current_role",
+    "coef": -0.361908
+   },
+   {
+    "term": "job_role_Research Scientist",
+    "coef": -0.350702
+   },
+   {
+    "term": "job_involvement",
+    "coef": -0.340208
+   },
+   {
+    "term": "job_role_Sales Executive",
+    "coef": 0.315871
+   },
+   {
+    "term": "job_role_Research Director",
+    "coef": -0.292568
+   },
+   {
+    "term": "education_field_Medical",
+    "coef": -0.287496
+   },
+   {
+    "term": "training_times_last_year",
+    "coef": -0.273606
+   },
+   {
+    "term": "distance_from_home",
+    "coef": 0.270464
+   },
+   {
+    "term": "age",
+    "coef": -0.266623
+   },
+   {
+    "term": "education_field_Life Sciences",
+    "coef": -0.263371
+   },
+   {
+    "term": "relationship_satisfaction",
+    "coef": -0.258815
+   },
+   {
+    "term": "years_at_company",
+    "coef": 0.230333
+   },
+   {
+    "term": "job_role_Manufacturing Director",
+    "coef": -0.18541
+   },
+   {
+    "term": "education_field_Marketing",
+    "coef": 0.181201
+   },
+   {
+    "term": "work_life_balance",
+    "coef": -0.146991
+   },
+   {
+    "term": "job_level",
+    "coef": -0.127677
+   },
+   {
+    "term": "performance_rating",
+    "coef": -0.109704
+   },
+   {
+    "term": "monthly_income",
+    "coef": -0.086255
+   },
+   {
+    "term": "education",
+    "coef": -0.066719
+   },
+   {
+    "term": "job_role_Manager",
+    "coef": -0.021166
+   },
+   {
+    "term": "percent_salary_hike",
+    "coef": 0.001216
+   }
+  ],
+  "odds_ratios": {
+   "terms": [
+    {
+     "term": "age",
+     "label": "Age (per 10 years)",
+     "group": "numeric",
+     "odds_ratio": 0.719527,
+     "ci": [
+      0.552714,
+      0.936686
+     ],
+     "p": 0.014445
+    },
+    {
+     "term": "monthly_income",
+     "label": "Monthly income (per 1,000)",
+     "group": "numeric",
+     "odds_ratio": 1.008389,
+     "ci": [
+      0.861734,
+      1.180003
+     ],
+     "p": 0.917025
+    },
+    {
+     "term": "job_level",
+     "label": "Job level (per level)",
+     "group": "numeric",
+     "odds_ratio": 0.997172,
+     "ci": [
+      0.541498,
+      1.836298
+     ],
+     "p": 0.992747
+    },
+    {
+     "term": "years_at_company",
+     "label": "Years at the company (per 5 years)",
+     "group": "numeric",
+     "odds_ratio": 1.565385,
+     "ci": [
+      1.080531,
+      2.267802
+     ],
+     "p": 0.017812
+    },
+    {
+     "term": "years_in_current_role",
+     "label": "Years in current role (per 5 years)",
+     "group": "numeric",
+     "odds_ratio": 0.472329,
+     "ci": [
+      0.304901,
+      0.731697
+     ],
+     "p": 0.000783
+    },
+    {
+     "term": "years_since_last_promotion",
+     "label": "Years since last promotion (per 5 years)",
+     "group": "numeric",
+     "odds_ratio": 2.26778,
+     "ci": [
+      1.517161,
+      3.38977
+     ],
+     "p": 6.5e-05
+    },
+    {
+     "term": "years_with_curr_manager",
+     "label": "Years with current manager (per 5 years)",
+     "group": "numeric",
+     "odds_ratio": 0.542364,
+     "ci": [
+      0.345384,
+      0.851688
+     ],
+     "p": 0.00788
+    },
+    {
+     "term": "total_working_years",
+     "label": "Total working years (per 10 years)",
+     "group": "numeric",
+     "odds_ratio": 0.521617,
+     "ci": [
+      0.296384,
+      0.918013
+     ],
+     "p": 0.024035
+    },
+    {
+     "term": "num_companies_worked",
+     "label": "Previous employers (per employer)",
+     "group": "numeric",
+     "odds_ratio": 1.206759,
+     "ci": [
+      1.11999,
+      1.30025
+     ],
+     "p": 1e-06
+    },
+    {
+     "term": "distance_from_home",
+     "label": "Distance from home (per 10 units)",
+     "group": "numeric",
+     "odds_ratio": 1.558286,
+     "ci": [
+      1.265505,
+      1.918803
+     ],
+     "p": 2.9e-05
+    },
+    {
+     "term": "percent_salary_hike",
+     "label": "Last salary rise (per 5 points)",
+     "group": "numeric",
+     "odds_ratio": 0.915965,
+     "ci": [
+      0.629891,
+      1.331964
+     ],
+     "p": 0.645897
+    },
+    {
+     "term": "training_times_last_year",
+     "label": "Trainings last year (per training)",
+     "group": "numeric",
+     "odds_ratio": 0.831069,
+     "ci": [
+      0.72214,
+      0.95643
+     ],
+     "p": 0.009839
+    },
+    {
+     "term": "stock_option_level",
+     "label": "Stock option level (per level)",
+     "group": "numeric",
+     "odds_ratio": 0.543213,
+     "ci": [
+      0.431536,
+      0.683789
+     ],
+     "p": 0.0
+    },
+    {
+     "term": "education",
+     "label": "Education level (per level)",
+     "group": "numeric",
+     "odds_ratio": 1.009296,
+     "ci": [
+      0.851974,
+      1.195668
+     ],
+     "p": 0.914771
+    },
+    {
+     "term": "job_satisfaction",
+     "label": "Job satisfaction (per scale point)",
+     "group": "numeric",
+     "odds_ratio": 0.674571,
+     "ci": [
+      0.576896,
+      0.788783
+     ],
+     "p": 1e-06
+    },
+    {
+     "term": "environment_satisfaction",
+     "label": "Environment satisfaction (per scale point)",
+     "group": "numeric",
+     "odds_ratio": 0.657262,
+     "ci": [
+      0.560127,
+      0.771241
+     ],
+     "p": 0.0
+    },
+    {
+     "term": "relationship_satisfaction",
+     "label": "Relationship satisfaction (per scale point)",
+     "group": "numeric",
+     "odds_ratio": 0.783704,
+     "ci": [
+      0.668541,
+      0.918705
+     ],
+     "p": 0.002651
+    },
+    {
+     "term": "job_involvement",
+     "label": "Job involvement (per scale point)",
+     "group": "numeric",
+     "odds_ratio": 0.580597,
+     "ci": [
+      0.458473,
+      0.735252
+     ],
+     "p": 6e-06
+    },
+    {
+     "term": "work_life_balance",
+     "label": "Work-life balance (per scale point)",
+     "group": "numeric",
+     "odds_ratio": 0.717782,
+     "ci": [
+      0.565773,
+      0.910632
+     ],
+     "p": 0.006314
+    },
+    {
+     "term": "performance_rating",
+     "label": "Performance rating (outstanding vs excellent)",
+     "group": "numeric",
+     "odds_ratio": 1.073315,
+     "ci": [
+      0.502335,
+      2.293302
+     ],
+     "p": 0.855076
+    },
+    {
+     "term": "overtime",
+     "label": "Works overtime (yes vs no)",
+     "group": "numeric",
+     "odds_ratio": 6.752376,
+     "ci": [
+      4.664615,
+      9.774564
+     ],
+     "p": 0.0
+    },
+    {
+     "term": "job_role_Healthcare Representative",
+     "label": "Job role: Healthcare Representative vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 0.349545,
+     "ci": [
+      0.145544,
+      0.839484
+     ],
+     "p": 0.018705
+    },
+    {
+     "term": "job_role_Human Resources",
+     "label": "Job role: Human Resources vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 1.187644,
+     "ci": [
+      0.369107,
+      3.821379
+     ],
+     "p": 0.773026
+    },
+    {
+     "term": "job_role_Laboratory Technician",
+     "label": "Job role: Laboratory Technician vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 1.708974,
+     "ci": [
+      0.862001,
+      3.388156
+     ],
+     "p": 0.124859
+    },
+    {
+     "term": "job_role_Manager",
+     "label": "Job role: Manager vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 0.375034,
+     "ci": [
+      0.090341,
+      1.556884
+     ],
+     "p": 0.176883
+    },
+    {
+     "term": "job_role_Manufacturing Director",
+     "label": "Job role: Manufacturing Director vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 0.444343,
+     "ci": [
+      0.193154,
+      1.022195
+     ],
+     "p": 0.05635
+    },
+    {
+     "term": "job_role_Research Director",
+     "label": "Job role: Research Director vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 0.106655,
+     "ci": [
+      0.016774,
+      0.67814
+     ],
+     "p": 0.017716
+    },
+    {
+     "term": "job_role_Research Scientist",
+     "label": "Job role: Research Scientist vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 0.661307,
+     "ci": [
+      0.322827,
+      1.354677
+     ],
+     "p": 0.258362
+    },
+    {
+     "term": "job_role_Sales Representative",
+     "label": "Job role: Sales Representative vs Sales Executive",
+     "group": "category",
+     "odds_ratio": 2.724407,
+     "ci": [
+      1.236453,
+      6.002973
+     ],
+     "p": 0.012899
+    },
+    {
+     "term": "business_travel_Frequently",
+     "label": "Business travel: Frequently vs Rarely",
+     "group": "category",
+     "odds_ratio": 2.394916,
+     "ci": [
+      1.591701,
+      3.603455
+     ],
+     "p": 2.8e-05
+    },
+    {
+     "term": "business_travel_None",
+     "label": "Business travel: None vs Rarely",
+     "group": "category",
+     "odds_ratio": 0.389244,
+     "ci": [
+      0.187995,
+      0.80593
+     ],
+     "p": 0.011053
+    },
+    {
+     "term": "education_field_Human Resources",
+     "label": "Education field: Human Resources vs Life Sciences",
+     "group": "category",
+     "odds_ratio": 1.691219,
+     "ci": [
+      0.37586,
+      7.609812
+     ],
+     "p": 0.493499
+    },
+    {
+     "term": "education_field_Marketing",
+     "label": "Education field: Marketing vs Life Sciences",
+     "group": "category",
+     "odds_ratio": 1.530396,
+     "ci": [
+      0.822649,
+      2.847037
+     ],
+     "p": 0.179091
+    },
+    {
+     "term": "education_field_Medical",
+     "label": "Education field: Medical vs Life Sciences",
+     "group": "category",
+     "odds_ratio": 0.918492,
+     "ci": [
+      0.602973,
+      1.399113
+     ],
+     "p": 0.692141
+    },
+    {
+     "term": "education_field_Other",
+     "label": "Education field: Other vs Life Sciences",
+     "group": "category",
+     "odds_ratio": 0.828554,
+     "ci": [
+      0.369206,
+      1.8594
+     ],
+     "p": 0.648373
+    },
+    {
+     "term": "education_field_Technical Degree",
+     "label": "Education field: Technical Degree vs Life Sciences",
+     "group": "category",
+     "odds_ratio": 2.420571,
+     "ci": [
+      1.350448,
+      4.33868
+     ],
+     "p": 0.002988
+    }
+   ],
+   "reference_levels": {
+    "job_role": "Sales Executive",
+    "business_travel": "Rarely",
+    "education_field": "Life Sciences"
+   },
+   "n": 1470,
+   "pseudo_r2": 0.322076,
+   "converged": true,
+   "vif": {
+    "age": 2.043898,
+    "monthly_income": 10.788416,
+    "job_level": 11.177111,
+    "years_at_company": 4.572219,
+    "years_in_current_role": 2.707815,
+    "years_since_last_promotion": 1.672323,
+    "years_with_curr_manager": 2.775841,
+    "total_working_years": 4.762254,
+    "num_companies_worked": 1.25962,
+    "distance_from_home": 1.014126,
+    "percent_salary_hike": 2.513599,
+    "training_times_last_year": 1.016056,
+    "stock_option_level": 1.012474,
+    "education": 1.058159,
+    "job_satisfaction": 1.008894,
+    "environment_satisfaction": 1.010913,
+    "relationship_satisfaction": 1.017895,
+    "job_involvement": 1.012839,
+    "work_life_balance": 1.013782,
+    "performance_rating": 2.512301,
+    "overtime": 1.022222
+   }
+  },
+  "oof_metrics": {
+   "brier": 0.092976,
+   "log_loss": 0.323556,
+   "auroc": 0.833564,
+   "average_precision": 0.624868,
+   "calibration_intercept": -0.021643,
+   "calibration_slope": 0.971923
+  },
+  "test_size_employees": 368,
+  "without_stock_options": {
+   "test": {
+    "brier": 0.095301,
+    "log_loss": 0.332431,
+    "auroc": 0.823542,
+    "average_precision": 0.613326,
+    "calibration_intercept": 0.109727,
+    "calibration_slope": 0.978835
+   },
+   "c": 0.3,
+   "oof_metrics": {
+    "brier": 0.096707,
+    "log_loss": 0.332351,
+    "auroc": 0.824027,
+    "average_precision": 0.594227,
+    "calibration_intercept": -0.016304,
+    "calibration_slope": 0.977582
+   }
+  }
+ },
+ "risk_segments": {
+  "bounds": [
+   0.1,
+   0.2,
+   0.35
+  ],
+  "bands": [
+   {
+    "band": "Low",
+    "range": [
+     0.0,
+     0.1
+    ],
+    "mean_predicted": 0.036215,
+    "employees": 794,
+    "leavers": 37,
+    "rate": 0.046599,
+    "ci": [
+     0.033995,
+     0.06357
+    ],
+    "median_age": 38.0,
+    "median_income": 5890.0,
+    "median_tenure": 7.0,
+    "mean_job_level": 2.384131,
+    "overtime_share": 0.120907,
+    "low_job_satisfaction_share": 0.144836,
+    "frequent_travel_share": 0.148615,
+    "no_stock_share": 0.335013,
+    "departments": {
+     "Research & Development": 562,
+     "Sales": 203,
+     "Human Resources": 29
+    }
+   },
+   {
+    "band": "Moderate",
+    "range": [
+     0.1,
+     0.2
+    ],
+    "mean_predicted": 0.144586,
+    "employees": 266,
+    "leavers": 34,
+    "rate": 0.12782,
+    "ci": [
+     0.092929,
+     0.173307
+    ],
+    "median_age": 34.0,
+    "median_income": 4496.5,
+    "median_tenure": 5.0,
+    "mean_job_level": 1.789474,
+    "overtime_share": 0.296992,
+    "low_job_satisfaction_share": 0.244361,
+    "frequent_travel_share": 0.176692,
+    "no_stock_share": 0.454887,
+    "departments": {
+     "Research & Development": 162,
+     "Sales": 91,
+     "Human Resources": 13
+    }
+   },
+   {
+    "band": "Elevated",
+    "range": [
+     0.2,
+     0.35
+    ],
+    "mean_predicted": 0.266101,
+    "employees": 199,
+    "leavers": 36,
+    "rate": 0.180905,
+    "ci": [
+     0.13363,
+     0.240265
+    ],
+    "median_age": 35.0,
+    "median_income": 4249.0,
+    "median_tenure": 5.0,
+    "mean_job_level": 1.773869,
+    "overtime_share": 0.477387,
+    "low_job_satisfaction_share": 0.19598,
+    "frequent_travel_share": 0.271357,
+    "no_stock_share": 0.517588,
+    "departments": {
+     "Research & Development": 120,
+     "Sales": 68,
+     "Human Resources": 11
+    }
+   },
+   {
+    "band": "High",
+    "range": [
+     0.35,
+     1.0
+    ],
+    "mean_predicted": 0.568569,
+    "employees": 211,
+    "leavers": 130,
+    "rate": 0.616114,
+    "ci": [
+     0.548973,
+     0.679102
+    ],
+    "median_age": 31.0,
+    "median_income": 3339.0,
+    "median_tenure": 3.0,
+    "mean_job_level": 1.478673,
+    "overtime_share": 0.691943,
+    "low_job_satisfaction_share": 0.331754,
+    "frequent_travel_share": 0.274882,
+    "no_stock_share": 0.668246,
+    "departments": {
+     "Research & Development": 117,
+     "Sales": 84,
+     "Human Resources": 10
+    }
+   }
+  ]
+ },
+ "segments": {
+  "k": 2,
+  "silhouette": {
+   "2": 0.281365,
+   "3": 0.17238,
+   "4": 0.158428,
+   "5": 0.159513,
+   "6": 0.125752,
+   "7": 0.126068,
+   "8": 0.115291
+  },
+  "stability_ari": [
+   0.941319,
+   0.941319,
+   0.996913,
+   0.938232,
+   0.938232
+  ],
+  "features": [
+   "age",
+   "monthly_income",
+   "job_level",
+   "years_at_company",
+   "years_since_last_promotion",
+   "total_working_years",
+   "job_satisfaction",
+   "environment_satisfaction",
+   "work_life_balance",
+   "overtime",
+   "business_travel_frequent",
+   "stock_option_level"
+  ],
+  "segments": [
+   {
+    "segment": 1,
+    "label": "Low income, low job level, low experience",
+    "centre": {
+     "age": -0.261236,
+     "monthly_income": -0.412416,
+     "job_level": -0.394642,
+     "years_at_company": -0.278783,
+     "years_since_last_promotion": -0.224805,
+     "total_working_years": -0.388041,
+     "job_satisfaction": 0.007584,
+     "environment_satisfaction": -0.001023,
+     "work_life_balance": -0.004063,
+     "overtime": -0.000481,
+     "business_travel_frequent": 0.011166,
+     "stock_option_level": 0.00759
+    },
+    "employees": 1167,
+    "leavers": 209,
+    "rate": 0.179092,
+    "ci": [
+     0.158157,
+     0.202132
+    ],
+    "median_age": 34.0,
+    "median_income": 4200.0,
+    "median_tenure": 5.0,
+    "mean_job_level": 1.627249,
+    "overtime_share": 0.282776,
+    "low_job_satisfaction_share": 0.19623,
+    "frequent_travel_share": 0.192802,
+    "no_stock_share": 0.437875,
+    "departments": {
+     "Research & Development": 759,
+     "Sales": 358,
+     "Human Resources": 50
+    }
+   },
+   {
+    "segment": 2,
+    "label": "High income, high job level, high experience",
+    "centre": {
+     "age": 1.006147,
+     "monthly_income": 1.588416,
+     "job_level": 1.519957,
+     "years_at_company": 1.07373,
+     "years_since_last_promotion": 0.865835,
+     "total_working_years": 1.494536,
+     "job_satisfaction": -0.029209,
+     "environment_satisfaction": 0.003939,
+     "work_life_balance": 0.01565,
+     "overtime": 0.001854,
+     "business_travel_frequent": -0.043007,
+     "stock_option_level": -0.029233
+    },
+    "employees": 303,
+    "leavers": 28,
+    "rate": 0.092409,
+    "ci": [
+     0.064709,
+     0.130315
+    ],
+    "median_age": 46.0,
+    "median_income": 13734.0,
+    "median_tenure": 13.0,
+    "mean_job_level": 3.745875,
+    "overtime_share": 0.283828,
+    "low_job_satisfaction_share": 0.19802,
+    "frequent_travel_share": 0.171617,
+    "no_stock_share": 0.39604,
+    "departments": {
+     "Research & Development": 202,
+     "Sales": 88,
+     "Human Resources": 13
+    }
+   }
+  ]
+ },
+ "fairness": [
+  {
+   "attribute": "gender",
+   "group": "Female",
+   "employees": 588,
+   "leavers": 87,
+   "observed_rate": 0.147959,
+   "mean_predicted": 0.171069,
+   "auroc": 0.83424,
+   "flagged_share": 0.159864,
+   "true_positive_rate": 0.632184,
+   "false_positive_rate": 0.077844
+  },
+  {
+   "attribute": "gender",
+   "group": "Male",
+   "employees": 882,
+   "leavers": 150,
+   "observed_rate": 0.170068,
+   "mean_predicted": 0.158217,
+   "auroc": 0.835838,
+   "flagged_share": 0.132653,
+   "true_positive_rate": 0.5,
+   "false_positive_rate": 0.057377
+  },
+  {
+   "attribute": "age_band",
+   "group": "18–25",
+   "employees": 123,
+   "leavers": 44,
+   "observed_rate": 0.357724,
+   "mean_predicted": 0.309289,
+   "auroc": 0.846951,
+   "flagged_share": 0.349593,
+   "true_positive_rate": 0.613636,
+   "false_positive_rate": 0.202532
+  },
+  {
+   "attribute": "age_band",
+   "group": "26–35",
+   "employees": 606,
+   "leavers": 116,
+   "observed_rate": 0.191419,
+   "mean_predicted": 0.190313,
+   "auroc": 0.87551,
+   "flagged_share": 0.169967,
+   "true_positive_rate": 0.637931,
+   "false_positive_rate": 0.059184
+  },
+  {
+   "attribute": "age_band",
+   "group": "36–45",
+   "employees": 468,
+   "leavers": 43,
+   "observed_rate": 0.09188,
+   "mean_predicted": 0.131809,
+   "auroc": 0.782873,
+   "flagged_share": 0.098291,
+   "true_positive_rate": 0.44186,
+   "false_positive_rate": 0.063529
+  },
+  {
+   "attribute": "age_band",
+   "group": "46+",
+   "employees": 273,
+   "leavers": 34,
+   "observed_rate": 0.124542,
+   "mean_predicted": 0.091859,
+   "auroc": 0.703667,
+   "flagged_share": 0.069597,
+   "true_positive_rate": 0.294118,
+   "false_positive_rate": 0.037657
+  },
+  {
+   "attribute": "marital_status",
+   "group": "Divorced",
+   "employees": 327,
+   "leavers": 33,
+   "observed_rate": 0.100917,
+   "mean_predicted": 0.123215,
+   "auroc": 0.886931,
+   "flagged_share": 0.103976,
+   "true_positive_rate": 0.606061,
+   "false_positive_rate": 0.047619
+  },
+  {
+   "attribute": "marital_status",
+   "group": "Married",
+   "employees": 673,
+   "leavers": 84,
+   "observed_rate": 0.124814,
+   "mean_predicted": 0.14083,
+   "auroc": 0.751738,
+   "flagged_share": 0.10104,
+   "true_positive_rate": 0.380952,
+   "false_positive_rate": 0.061121
+  },
+  {
+   "attribute": "marital_status",
+   "group": "Single",
+   "employees": 470,
+   "leavers": 120,
+   "observed_rate": 0.255319,
+   "mean_predicted": 0.223546,
+   "auroc": 0.862452,
+   "flagged_share": 0.231915,
+   "true_positive_rate": 0.65,
+   "false_positive_rate": 0.088571
+  }
+ ],
+ "fairness_without_stock_options": [
+  {
+   "attribute": "gender",
+   "group": "Female",
+   "employees": 588,
+   "leavers": 87,
+   "observed_rate": 0.147959,
+   "mean_predicted": 0.168269,
+   "auroc": 0.822286,
+   "flagged_share": 0.158163,
+   "true_positive_rate": 0.574713,
+   "false_positive_rate": 0.085828
+  },
+  {
+   "attribute": "gender",
+   "group": "Male",
+   "employees": 882,
+   "leavers": 150,
+   "observed_rate": 0.170068,
+   "mean_predicted": 0.159293,
+   "auroc": 0.826612,
+   "flagged_share": 0.134921,
+   "true_positive_rate": 0.52,
+   "false_positive_rate": 0.056011
+  },
+  {
+   "attribute": "age_band",
+   "group": "18–25",
+   "employees": 123,
+   "leavers": 44,
+   "observed_rate": 0.357724,
+   "mean_predicted": 0.297053,
+   "auroc": 0.838608,
+   "flagged_share": 0.349593,
+   "true_positive_rate": 0.659091,
+   "false_positive_rate": 0.177215
+  },
+  {
+   "attribute": "age_band",
+   "group": "26–35",
+   "employees": 606,
+   "leavers": 116,
+   "observed_rate": 0.191419,
+   "mean_predicted": 0.191085,
+   "auroc": 0.859342,
+   "flagged_share": 0.174917,
+   "true_positive_rate": 0.603448,
+   "false_positive_rate": 0.073469
+  },
+  {
+   "attribute": "age_band",
+   "group": "36–45",
+   "employees": 468,
+   "leavers": 43,
+   "observed_rate": 0.09188,
+   "mean_predicted": 0.134034,
+   "auroc": 0.782161,
+   "flagged_share": 0.100427,
+   "true_positive_rate": 0.465116,
+   "false_positive_rate": 0.063529
+  },
+  {
+   "attribute": "age_band",
+   "group": "46+",
+   "employees": 273,
+   "leavers": 34,
+   "observed_rate": 0.124542,
+   "mean_predicted": 0.089291,
+   "auroc": 0.705144,
+   "flagged_share": 0.058608,
+   "true_positive_rate": 0.264706,
+   "false_positive_rate": 0.029289
+  },
+  {
+   "attribute": "marital_status",
+   "group": "Divorced",
+   "employees": 327,
+   "leavers": 33,
+   "observed_rate": 0.100917,
+   "mean_predicted": 0.160297,
+   "auroc": 0.900742,
+   "flagged_share": 0.143731,
+   "true_positive_rate": 0.727273,
+   "false_positive_rate": 0.078231
+  },
+  {
+   "attribute": "marital_status",
+   "group": "Married",
+   "employees": 673,
+   "leavers": 84,
+   "observed_rate": 0.124814,
+   "mean_predicted": 0.152684,
+   "auroc": 0.754386,
+   "flagged_share": 0.120357,
+   "true_positive_rate": 0.416667,
+   "false_positive_rate": 0.078098
+  },
+  {
+   "attribute": "marital_status",
+   "group": "Single",
+   "employees": 470,
+   "leavers": 120,
+   "observed_rate": 0.255319,
+   "mean_predicted": 0.179289,
+   "auroc": 0.864405,
+   "flagged_share": 0.178723,
+   "true_positive_rate": 0.575,
+   "false_positive_rate": 0.042857
+  }
+ ]
+}

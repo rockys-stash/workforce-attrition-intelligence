@@ -1,0 +1,71 @@
+{
+ "recommendations": [
+  {
+   "area": "Workload",
+   "title": "Review overtime load",
+   "finding": "31% of employees who work overtime left, against 10% of those who do not.",
+   "evidence": [
+    "Within the same job level the odds of having left are 4.1 times as high with overtime (Mantel–Haenszel, 95% CI 3.0–5.5)",
+    "Adjusted for the other model variables, odds ratio 6.75 (95% CI 4.66–9.77)",
+    "Overtime is most common among Research Scientist (33%), Sales Representative (29%), Sales Executive (29%)"
+   ],
+   "action": "Look at how overtime is distributed and whether it is planned; if it is reduced somewhere, compare attrition there with comparable teams before drawing conclusions.",
+   "basis": "Association in a cross-section of a fictional workforce; no change has been tested here."
+  },
+  {
+   "area": "Tenure",
+   "title": "Pay attention to the first two years",
+   "finding": "35% of employees in their first two years (0–1 yrs) left, against 16% overall.",
+   "evidence": [
+    "75 of the 237 leavers (32%) had under two years at the company",
+    "Years at the company is entangled with age and job level; the tenure page shows both"
+   ],
+   "action": "Check in with new joiners at fixed points in their first two years and keep exit-interview records, so later data can separate tenure from age and level.",
+   "basis": "Association in a cross-section of a fictional workforce; no change has been tested here."
+  },
+  {
+   "area": "Compensation",
+   "title": "Review pay position at entry level",
+   "finding": "Level 1 has the highest attrition (26%), and employees paid more than 10% below their level's median left more often (20%) than those near it (15%).",
+   "evidence": [
+    "Level 1 holds 143 of 237 leavers",
+    "Adjusted for job level, tenure and the other model variables, the odds ratio per 1,000 of monthly income is 1.01 (95% CI 0.86–1.18); pay and level move together (variance inflation 11), so the two are hard to separate"
+   ],
+   "action": "Compare entry-level pay with the market and within roles; treat pay changes as something to evaluate, not as a known lever.",
+   "basis": "Association in a cross-section of a fictional workforce; no change has been tested here."
+  },
+  {
+   "area": "Engagement",
+   "title": "Use low satisfaction scores as an early signal",
+   "finding": "Employees reporting low job satisfaction left more often (23%) than those reporting very high satisfaction (11%).",
+   "evidence": [
+    "Low environment satisfaction: 25% left",
+    "Satisfaction was recorded once, with no date, so it may have been measured after the decision to leave"
+   ],
+   "action": "Follow up low survey scores with a conversation; re-survey regularly so satisfaction can be measured before anyone leaves.",
+   "basis": "Association in a cross-section of a fictional workforce; no change has been tested here."
+  },
+  {
+   "area": "Compensation",
+   "title": "Check who has no stock options",
+   "finding": "24% of employees without stock options left, against 10% of those with any.",
+   "evidence": [
+    "631 employees have none",
+    "100% of single employees have no stock options, and 26% of single employees left, so stock options and marital status cannot be separated in these data"
+   ],
+   "action": "Review eligibility rules for stock options before reading anything into this pattern.",
+   "basis": "Association in a cross-section of a fictional workforce; no change has been tested here."
+  },
+  {
+   "area": "Departments",
+   "title": "Look closely at the Sales Representative role",
+   "finding": "40% of Sales Representatives left (33 of 83), the highest rate of any role with at least 30 employees.",
+   "evidence": [
+    "Next: Laboratory Technician 24%, Human Resources 23%",
+    "Overall rate 16%"
+   ],
+   "action": "Review the role's workload, pay position and tenure profile on the Departments page and talk to the team.",
+   "basis": "Association in a cross-section of a fictional workforce; no change has been tested here."
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "run_id": "20261011T003047Z-42a5167",
+ "commit": "42a5167170b00241481ced878654be9e2381ab35",
+ "dirty": false,
+ "created_at": "2026-10-11T00:30:47+00:00",
+ "runtime_seconds": 51.3,
+ "python": "3.13.16",
+ "cpus": 4,
+ "source_sha256": {
+  "emp_attrition.csv": "a5c31e38bd7fafc9bc333884eb181b06b41b8e5e488e8f7ccb27199fb3be7659"
+ },
+ "packages": {
+  "duckdb": "1.5.6",
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.9.1",
+  "statsmodels": "0.15.0"
+ },
+ "inputs_sha256": {
+  "sql/01_staging.sql": "a1ba39a7dbe652c315e5192dfbc88ddc8015d44dc9a6cf4e950bf593876787f2",
+  "sql/02_checks.sql": "40fb438dd4492bcb361821a93d016dac7020b936ee1607f22dc233c2d4324942",
+  "sql/03_model.sql": "3b7e22ca595e7e4ba180f16b3da29ff4a8bdda532378b7c018d899e60cd27e3e",
+  "sql/measures/attrition_by.sql": "fbff1cadb7cad1fb8c5150cbdab56cdbafdc975fd7a1a9a0fe45fd2ce02a56f3",
+  "sql/measures/compensation.sql": "6a32fc6cb804c88228bc8f791c98e4fb3894e87d0924958bc428a31336b755d1",
+  "sql/measures/departments.sql": "67b78cab44f3c09436868472b5af3e340386e384c05bda605d759cadc6f18e63",
+  "sql/measures/income_bands.sql": "b910d3a285e5d9130ac8226dca0c3fb7f4da337cb19f47a5a049587d55ea014c",
+  "sql/measures/model_tables.sql": "ff3fd73f16721465b0a32770df075acd92e825b98c42ec5690cc9ba446bcde62",
+  "sql/measures/overview.sql": "f159c20934d023f421ea520a53e353f360a40366c8dc4dcc7afa1094e3b7b75e",
+  "sql/measures/tenure_curve.sql": "51e69f5a42bc3606587463db385270ee936d0ae3125af579a3f22b23cb09a7dd",
+  "configs/pipeline.yaml": "7f6d6cf44f33a4f50345c593d90c2ed1073fc95e37319c32c4523f3699244cae"
+ },
+ "config": {
+  "source": {
+   "file": "data/source/emp_attrition.csv",
+   "sha256": "a5c31e38bd7fafc9bc333884eb181b06b41b8e5e488e8f7ccb27199fb3be7659",
+   "url": "https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/data/emp_attrition.csv",
+   "rows": 1470
+  },
+  "bands": {
+   "tenure_years": [
+    0,
+    2,
+    4,
+    6,
+    11,
+    21
+   ],
+   "age": [
+    18,
+    26,
+    36,
+    46
+   ],
+   "promotion_years": [
+    0,
+    1,
+    3,
+    6
+   ],
+   "income_quantiles": 5,
+   "pay_position_tolerance": 0.1
+  },
+  "tests": {
+   "alpha": 0.05
+  },
+  "segmentation": {
+   "k_range": [
+    2,
+    8
+   ],
+   "seed": 0,
+   "features": [
+    "age",
+    "monthly_income",
+    "job_level",
+    "years_at_company",
+    "years_since_last_promotion",
+    "total_working_years",
+    "job_satisfaction",
+    "environment_satisfaction",
+    "work_life_balance",
+    "overtime",
+    "business_travel_frequent",
+    "stock_option_level"
+   ]
+  },
+  "model": {
+   "seed": 0,
+   "test_size": 0.25,
+   "cv_folds": 5,
+   "c_grid": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0
+   ],
+   "bootstrap": 2000,
+   "risk_bands": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "numeric": [
+    "age",
+    "monthly_income",
+    "job_level",
+    "years_at_company",
+    "years_in_current_role",
+    "years_since_last_promotion",
+    "years_with_curr_manager",
+    "total_working_years",
+    "num_companies_worked",
+    "distance_from_home",
+    "percent_salary_hike",
+    "training_times_last_year",
+    "stock_option_level",
+    "education"
+   ],
+   "ordinal": [
+    "job_satisfaction",
+    "environment_satisfaction",
+    "relationship_satisfaction",
+    "job_involvement",
+    "work_life_balance",
+    "performance_rating"
+   ],
+   "binary": [
+    "overtime"
+   ],
+   "categorical": [
+    "job_role",
+    "business_travel",
+    "education_field"
+   ],
+   "audit_groups": [
+    "gender",
+    "age_band",
+    "marital_status"
+   ]
+  }
+ }
+}
