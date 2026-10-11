@@ -1,0 +1,42 @@
+# Every analysis choice lives here; changing one is a new, versioned run.
+source:
+  file: data/source/emp_attrition.csv
+  sha256: a5c31e38bd7fafc9bc333884eb181b06b41b8e5e488e8f7ccb27199fb3be7659
+  url: https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/data/emp_attrition.csv
+  rows: 1470
+
+bands:
+  # Lower bounds, inclusive; each band runs to the next bound.
+  tenure_years: [0, 2, 4, 6, 11, 21]
+  age: [18, 26, 36, 46]
+  promotion_years: [0, 1, 3, 6]
+  income_quantiles: 5            # salary bands are income quintiles across all employees
+  pay_position_tolerance: 0.10   # within ±10% of the job level's median income = "at level median"
+
+tests:
+  alpha: 0.05                    # after Holm correction across every test in the run
+
+segmentation:
+  k_range: [2, 8]
+  seed: 0
+  features: [age, monthly_income, job_level, years_at_company, years_since_last_promotion, total_working_years,
+             job_satisfaction, environment_satisfaction, work_life_balance, overtime, business_travel_frequent,
+             stock_option_level]
+
+model:
+  seed: 0
+  test_size: 0.25
+  cv_folds: 5
+  c_grid: [0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0]
+  bootstrap: 2000
+  risk_bands: [0.10, 0.20, 0.35]  # out-of-fold predicted risk: low < 0.10 <= moderate < 0.20 <= elevated < 0.35 <= high
+  # Pre-specified features (PLAN). Gender and marital status are excluded from the model and used only to audit it.
+  numeric: [age, monthly_income, job_level, years_at_company, years_in_current_role, years_since_last_promotion,
+            years_with_curr_manager, total_working_years, num_companies_worked, distance_from_home,
+            percent_salary_hike, training_times_last_year, stock_option_level, education]
+  ordinal: [job_satisfaction, environment_satisfaction, relationship_satisfaction, job_involvement,
+            work_life_balance, performance_rating]
+  binary: [overtime]
+  # Job role, not department: roles sit inside departments, so both together are nearly collinear (DECISIONS).
+  categorical: [job_role, business_travel, education_field]
+  audit_groups: [gender, age_band, marital_status]

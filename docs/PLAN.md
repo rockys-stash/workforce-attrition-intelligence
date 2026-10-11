@@ -29,8 +29,8 @@ there are no hours or output measures).
 The data are a single cross-section: each employee's attributes and whether they left. There is no
 time order between a characteristic and leaving, no intervention and no natural experiment. So:
 
-- Every result is an association. "Overtime is associated with higher attrition", never "overtime
-  causes attrition", "drives", "leads to", "reduces" or "impact".
+- Every result is an association: "Overtime is associated with higher attrition",
+  never "overtime causes attrition", "drives", "leads to", "reduces" or "impact".
 - The model estimates *observed attrition risk*: how much an employee's profile resembles those who
   left. It is not a forecast of who will leave and not an estimate of what a policy would change.
 - An automated audit checks every document, the generated results and the dashboard's text for
@@ -64,7 +64,7 @@ time order between a characteristic and leaving, no intervention and no natural 
 - **Stratification**: overtime within job level (Mantel–Haenszel odds ratio) to show how an
   association changes with adjustment.
 - **Segmentation**: k-means on standardised workforce characteristics (k by silhouette); attrition
-  rate per segment, described as a profile, not a cause.
+  rate per segment, described as a profile, not an explanation.
 - **Model**: logistic regression on a pre-specified feature set. Gender and marital status are left
   out of the risk model and used only to check it (fairness). Stratified 75/25 split, seed fixed;
   model choices (regularisation strength) by 5-fold cross-validation on the training part; the test
