@@ -1,7 +1,7 @@
-"""Capture screenshots of the running console from the committed results.
+"""Capture screenshots of the dashboard from the committed results.
 
 Usage: uv run python scripts/screenshots.py [--out docs/screenshots]
-Needs the built console (npm --prefix web run build), Chromium for Playwright and
+Needs the built dashboard (npm --prefix web run build), Chromium for Playwright and
 the measured results (make all).
 """
 
@@ -15,8 +15,9 @@ import urllib.request
 from pathlib import Path
 
 import uvicorn
-from ecomintel.api import create_app
 from playwright.sync_api import ViewportSize, sync_playwright
+
+from wfintel.api import create_app
 
 ROOT = Path(__file__).resolve().parents[1]
 VIEWPORTS: dict[str, ViewportSize] = {
@@ -47,8 +48,8 @@ def main() -> None:
             break
         except OSError:
             time.sleep(0.1)
-    shots = [("executive", "/executive"), ("customers", "/customers"), ("products", "/products"), ("revenue", "/revenue"),
-             ("retention", "/retention"), ("recommendations", "/recommendations"), ("method", "/method")]  # fmt: skip
+    shots = [("executive", "/executive"), ("attrition", "/attrition"), ("departments", "/departments"),
+             ("compensation", "/compensation"), ("tenure", "/tenure"), ("risk", "/risk"), ("method", "/method")]  # fmt: skip
     args.out.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as pw:
         browser = pw.chromium.launch()

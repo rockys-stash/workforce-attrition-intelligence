@@ -21,7 +21,9 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run mypy src tests scripts
       - run: uv run pytest
-      - name: Download the workbook (hash-checked) and run the pipeline into results/scratch (checks the pipeline, not a result)
+      - name: Causal-language audit (fails on any finding)
+        run: uv run wfintel audit
+      - name: Check the CSV hash and run the pipeline into results/scratch (checks the pipeline, not a result)
         run: |
           make smoke
 
